@@ -1,0 +1,58 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1E3E7;
+}
+
+.factura{
+  display: inline-block;
+  background-color: white;
+  width: 595px;
+  height: 842px;
+}
+
+.factura__data{
+    display: block;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+.factura__image{
+    display: inline-flexbox;
+    width: 30%;
+    margin: 10px;
+    position: relative;
+bottom: 15px;
+}
+
+.factura__1{
+    display: inline-block;
+  width: 50%;
+  position: relative;
+  font-size: 12px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.factura__2{
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+}
+
+.factura__2 >p{
+    padding-left: 15px;
+}
+
+p{
+    padding: 5px;
+    font-size: 10px;
+}
+strong{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    font-size: 20px;
+}
