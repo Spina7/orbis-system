@@ -26,7 +26,9 @@ function Solicitud() {
                 <label>RFC Remitente : </label>
                 <input id='input__2' type="text" name="rfc-remitente" />
                 <label>Domicilio : </label>
-                <input id='input__2' type="text" name="domicilio" />
+                <input id='input__2' type="text" name="domicilio" maxLength={23} />
+                <label>#2 Domicilio : </label>
+                <input id='input__2' type="text" name="domicilio" maxLength={33} />
                 <label>Se recoge en :</label>
                 <input id='input__2' type="text" name="recoge" />
             </div>
@@ -37,8 +39,10 @@ function Solicitud() {
                 <input id='input__2' type="text" name="destinatario" />
                 <label>RFC Destinatario :</label>
                 <input id='input__2' type="text" name="rfc-destinatario" />
-                <label>Patio Destino :</label>
-                <input id='input__2' type="text" name="patio-destino" />
+                <label>Patio Destino : </label>
+                <input id='input__2' type="text" name="domicilio" maxLength={23} />
+                <label>#2 Patio Destino : </label>
+                <input id='input__2' type="text" name="domicilio" maxLength={33} />
                 <label>Se entrega en :</label>
                 <input id='input__2' type="text" name="entrega" />
             </div>
