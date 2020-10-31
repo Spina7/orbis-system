@@ -50,19 +50,19 @@ function Factura() {
                         <p id='p4'>Lopez 588</p>
                     </div>
                     <div className='factura__5-2'>
-                        <p id='p2'>Origen : </p>
-                        <p id='p4'>Nuevo Laredo</p>
+                        <p id='p2'>Destino :</p>
+                        <p id='p4'>Villaguay</p>
                     </div>
                     <div className='factura__6-2'>
-                        <p id='p2'>Remitente : </p>
-                        <p id='p4'>Orbis Logistics</p>
+                        <p id='p2'>Destinatario :</p>
+                        <p id='p4'>Pedro Saborido</p>
                     </div>
                     <div className='factura__7-2'>
-                        <p id='p2'>RFC Remitente : </p>
-                        <p id='p4'>345546456</p>
+                        <p id='p2'>RFC Destinatario :</p>
+                        <p id='p4'>214232321</p>
                     </div>
                     <div className='factura__8-2'>
-                        <p id='p2'>Domicilio : </p>
+                        <p id='p2'>Patio Destino :</p>
                         <p id='p5'>Lopez 588</p>
                         <p id='p4'>Lopez 588</p>
                     </div>

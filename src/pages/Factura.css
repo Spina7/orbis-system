@@ -71,13 +71,13 @@ bottom: 15px;
     display: inline-block;
     border: 1px solid #000;
     border-left: none;
-    width: 110px;
+    width: 120px;
 }
 .factura__8{
     display: inline-block;
     border: 1px solid #000;
     border-left: none;
-    width: 265px;
+    width: 255px;
 }
 
 .factura__5-2{
@@ -101,14 +101,14 @@ bottom: 15px;
     border: 1px solid #000;
     border-top: none;
     border-left: none;
-    width: 110px;
+    width: 120px;
 }
 .factura__8-2{
     display: inline-block;
     border: 1px solid #000;
     border-top: none;
     border-left: none;
-    width: 265px;
+    width: 255px;
 }
 
 .factura__9{
