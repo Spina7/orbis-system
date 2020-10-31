@@ -1,25 +1,43 @@
 import React from 'react'
-import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
+import * as FaIcons from "react-icons/fa";
+import * as BsIcons from "react-icons/bs";
 
 export const SidebarData = [
     {
-        title: 'Home',
+        title: 'Panel',
         path: '/',
-        icon: <AiIcons.AiFillHome/>,
+        icon: <AiIcons.AiFillDashboard/>,
         cName: 'nav-text'
     },
     {
-        title: 'Solicitud',
-        path: '/solicitud',
-        icon: <IoIcons.IoIosPaper/>,
+        title: 'Nuevo Embarque',
+        path: '/embarque',
+        icon: <AiIcons.AiFillFileAdd/>,
         cName: 'nav-text'
     },
     {
         title: 'Factura',
         path: '/factura',
-        icon: <IoIcons.IoMdPeople/>,
+        icon: <FaIcons.FaFileInvoice/>,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Camiones',
+        path: '/camiones',
+        icon: <FaIcons.FaTrailer/>,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Conductores',
+        path: '/conductores',
+        icon: <BsIcons.BsFillPeopleFill/>,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Clientes',
+        path: '/clientes',
+        icon: <FaIcons.FaAddressBook/>,
         cName: 'nav-text'
     },
 ];
