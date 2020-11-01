@@ -1,5 +1,7 @@
 import React from 'react';
 import './Solicitud.css';
+import axios from 'axios';
+import {saveAs} from 'file-saver';
 
 function Solicitud() {
     return (
@@ -19,7 +21,7 @@ function Solicitud() {
             <label>Acciones</label>
             <div className='vertical-center'>
             <button className='boton'>Enviar</button>
-            <button className='boton'>Ver Factura</button>
+            <button className='boton'onClick={this.createAndDownloadPdf}>Download PDF</button>
             </div>
             <label>Estado : </label>
                 <input id='input__1' type="text" name="origen" />

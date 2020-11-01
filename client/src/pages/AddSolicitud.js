@@ -1,10 +1,11 @@
 import React from 'react'
-import Solicitud from '../components/Solicitud'
+import Solicitud from '../components/Solicitud';
+import Solicitud_pdf from '../components/Solicitud_pdf';
 
 function AddSolicitud() {
     return (
         <div>
-            <Solicitud/>
+            <Solicitud_pdf/>
         </div>
     )
 }
