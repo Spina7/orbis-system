@@ -1,9 +1,10 @@
 import React from 'react'
-import Container from '../components/Container'
+import Dashboard from '../components/Dashboard'
 
 function Home() {
     return (
-        <div className='container'>
+        <div>
+            <Dashboard/>
         </div>
     )
 }

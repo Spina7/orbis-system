@@ -17,7 +17,7 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Factura',
+        title: 'Carta Porte',
         path: '/factura',
         icon: <FaIcons.FaFileInvoice/>,
         cName: 'nav-text'

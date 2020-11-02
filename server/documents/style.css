@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  body{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #E1E3E7;
+  }
+  
+  .factura{
+    display: inline-block;
+    background-color: white;
+    width: 595px;
+    height: 842px;
+    margin: 10px;
+    white-space: normal;
+  }
+  
+  .factura__data{
+      display: block;
+      margin: 10px;
+      border: 1px solid #000;
+  }
+  
+  .factura__image{
+      display: inline-flexbox;
+      width: 30%;
+      margin: 10px;
+      position: relative;
+  bottom: 15px;
+  }
+  
+  .factura__1{
+      display: inline-block;
+    width: 40%;
+    position: relative;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  .factura__2{
+      display: inline-block;
+      position: relative;
+      bottom: 15px;
+  }
+  
+  .factura__3{
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid #000;
+  }
+  
+  .factura__4{
+      display: inline-block;
+      position: relative;
+  }
+  
+  .factura__5{
+      display: inline-block;
+      margin-left: 10px;
+      border: 1px solid #000;
+      width: 100px;
+  }
+  
+  .factura__6{
+      display: inline-block;
+      border: 1px solid #000;
+      width: 100px;
+      border-left: none;
+  }
+  
+  .factura__7{
+      display: inline-block;
+      border: 1px solid #000;
+      border-left: none;
+      width: 125px;
+  }
+  .factura__8{
+      display: inline-block;
+      border: 1px solid #000;
+      border-left: none;
+      width: 240px;
+  }
+  
+  .factura__5-2{
+      display: inline-block;
+      margin-left: 10px;
+      border: 1px solid #000;
+      border-top: none;
+      width: 100px;
+  }
+  
+  .factura__6-2{
+      display: inline-block;
+      border: 1px solid #000;
+      border-top: none;
+      width: 100px;
+      border-left: none;
+  }
+  
+  .factura__7-2{
+      display: inline-block;
+      border: 1px solid #000;
+      border-top: none;
+      border-left: none;
+      width: 125px;
+  }
+  .factura__8-2{
+      display: inline-block;
+      border: 1px solid #000;
+      border-top: none;
+      border-left: none;
+      width: 240px;
+  }
+  
+  .factura__9{
+      display: inline-block;
+      margin-left: 10px;
+      border: 1px solid #000;
+      border-top: none;
+      width: 287.5px;
+  }
+  
+  .factura__10{
+      display: inline-block;
+      border: 1px solid #000;
+      border-top: none;
+      width: 287.5px;
+      border-left: none;
+  }
+  
+  .factura__11{
+      display: inline-block;
+      margin-left: 10px;
+      margin-top: 10px;
+      border: 1px solid #000;
+      width: 225px;
+  }
+  
+  .factura__12{
+      display: inline-block;
+      margin-top: 10px;
+      border: 1px solid #000;
+      width: 150px;
+      border-left: none;
+  }
+  
+  .factura__13{
+      display: inline-block;
+      margin-top: 10px;
+      border: 1px solid #000;
+      width: 200px;
+      border-left: none;
+  }
+  
+  .factura__14{
+      display: inline-block;
+      margin-left: 10px;
+      border: 1px solid #000;
+      width: 90px;
+  }
+  
+  .factura__15{
+      display: inline-block;
+      border: 1px solid #000;
+      border-left: none;
+      width: 80px;
+  }
+  
+  .factura__16{
+      display: inline-block;
+      border: 1px solid #000;
+      border-left: none;
+      width: 85px;
+  }
+  
+  .factura__17{
+      display: inline-block;
+      border: 1px solid #000;
+      margin-left: 10px;
+      width: 165px;
+  }
+  
+  .factura__18{
+      display: inline-block;
+      border: 1px solid #000;
+      border-left: none;
+      width: 155px;
+  }
+  
+  
+  .factura__19{
+      display: inline-block;
+      border: 1px solid #000;
+      border-left: none;
+      width: 100px;
+  }
+  
+  .factura__20{
+      display: inline-block;
+      margin-left: 10px;
+      margin-top: 10px;
+      border: 1px solid #000;
+      width: 287.5px;
+  }
+  
+  .factura__21{
+      display: inline-block;
+      border: 1px solid #000;
+      margin-top: 10px;
+      width: 287.5px;
+      border-left: none;
+  }
+  
+  .factura__condiciones{
+      display: inline-block;
+      border: 1px solid #000;
+      margin: 10px;
+      width: 575px;
+      height: 800px;
+  }
+  
+  .factura__2 >p{
+      padding-left: 15px;
+  }
+  
+  p{
+      padding: 5px;
+      font-size: 10px;
+  }
+  
+  #p2{
+      font-weight: bold;
+      font-size: 13px;
+      display: inline-block;
+  }
+  #p3{
+      font-size: 13px;
+      display: inline-block;
+  }
+  #p4{
+      font-size: 13px;
+      display: block;
+  }
+  #p5{
+      font-size: 13px;
+      display: inline;
+  }
+  
+  #p6{
+      font-size: 10px;
+      text-align: center;
+      margin: 10px;
+      font-weight: bold;
+  }
+  
+  #p7{
+      font-size: 12px;
+      text-align: center;
+      margin: 10px;
+      font-weight: bold;
+  }
+  
+  #p8{
+      font-size: 12px;
+      text-align: justify;
+      margin: 10px;
+  }
+  strong{
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 25px;
+      font-size: 20px;
+  }
+  
+  h2{
+      text-align: center;
+  }
+  
+  h3{
+      margin: 10px;
+  }
