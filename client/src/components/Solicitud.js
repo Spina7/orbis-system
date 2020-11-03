@@ -1,7 +1,6 @@
 import React from 'react';
 import './Solicitud.css';
-import axios from 'axios';
-import {saveAs} from 'file-saver';
+import Button from '@material-ui/core/Button';
 
 function Solicitud() {
     return (
@@ -20,7 +19,7 @@ function Solicitud() {
             <div className='solicitud'>
             <label>Acciones</label>
             <div className='vertical-center'>
-            <button className='boton'>Enviar</button>
+            <Button variant="contained" color="primary">Hola Mundo!</Button>
             <button className='boton'onClick={this.createAndDownloadPdf}>Download PDF</button>
             </div>
             <label>Estado : </label>
