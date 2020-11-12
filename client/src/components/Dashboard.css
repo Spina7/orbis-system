@@ -189,7 +189,7 @@
 }
 
 .dashboard__5 a:hover{
-  color: black;
+  color: rgba(0, 17, 255, 0.37);
 }
 
 .dashboard__5 p{
@@ -205,8 +205,4 @@
   font-weight: bold;
   color: #0abb87;
   background-color: rgba(10, 187, 135, 0.1);
-}
-
-.dashboard__5 .Acciones{
-  display: flex;
 }

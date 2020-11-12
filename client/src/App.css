@@ -9,7 +9,11 @@
 
 .home,
 .solicitud,
-.embarque {
+.embarque,
+.camiones,
+.clientes,
+.conductores,
+.gps {
   display: flex;
   height: 90vh;
   align-items: center;

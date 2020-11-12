@@ -13,12 +13,6 @@ export const SidebarData = [
     {
         title: 'Nuevo Embarque',
         path: '/embarque',
-        icon: <AiIcons.AiFillFileAdd/>,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Carta Porte',
-        path: '/factura',
         icon: <FaIcons.FaFileInvoice/>,
         cName: 'nav-text'
     },
@@ -40,4 +34,10 @@ export const SidebarData = [
         icon: <FaIcons.FaAddressBook/>,
         cName: 'nav-text'
     },
+    {
+        title: 'GPS',
+        path: '/gps',
+        icon: <FaIcons.FaMapMarkedAlt/>,
+        cName: 'nav-text'
+    }
 ];

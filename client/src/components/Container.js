@@ -23,11 +23,6 @@ function Container() {
     
     const {docs: cartasporte} = useData('CartaPorte');
 
-    function mapRevers(reverse) {
-      let reversed = reverse.map( (num,index,reverse) => reverse[(reverse.length-1)-index] );
-      return reversed;
-  }
-
     return (
         <div className='dashboard__5'>
              <TableContainer component={Paper}>
@@ -37,9 +32,11 @@ function Container() {
             <TableCell>ID (Tracking)</TableCell>
             <TableCell align="left">Origen</TableCell>
             <TableCell align="left">Destino</TableCell>
+            <TableCell align="left">Cliente</TableCell>
             <TableCell align="left">Estado</TableCell>
+            <TableCell align="left">Operador</TableCell>
             <TableCell align="left">Fecha</TableCell>
-            <TableCell align="left">Acciones</TableCell>
+            <TableCell align="center">Acciones</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

@@ -22,7 +22,9 @@ export const CartaPorte = ({cartaporte}) => {
         Origen,
         Destino,
         Estado,
-        FechaExp
+        FechaExp,
+        DestinoRem,
+        Operador
      } = cartaporte;
     return(
         <>
@@ -32,16 +34,16 @@ export const CartaPorte = ({cartaporte}) => {
               </TableCell>
               <TableCell align="left">{Origen}</TableCell>
               <TableCell align="left">{Destino}</TableCell>
+              <TableCell align="left">{DestinoRem}</TableCell>
               <TableCell align="left"><p>{Estado}</p></TableCell>
+              <TableCell align="left">{Operador}</TableCell>
               <TableCell align="left">{FechaExp}</TableCell>
-              <TableCell align="left">
-                  <div className="Acciones">
+              <TableCell align="center">
                 <a href="#"><BsIcons.BsEyeFill/></a>
                 <a href="#"><AiIcons.AiFillEdit/></a>
                 <a href="#"><AiIcons.AiFillPrinter/></a>
                 <a href="#"><FaIcons.FaMapMarkedAlt/></a>
                 <a href="#"><TiIcons.TiDelete/></a>
-                </div>
               </TableCell>
               </TableRow>
             </>
