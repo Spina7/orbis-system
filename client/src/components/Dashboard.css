@@ -194,7 +194,7 @@
 
 .dashboard__5 p{
   display: inline-block;
-  width: 80px;
+  width: auto;
   height: 30px;
   border: 2px solid #0abb87;
   padding-left: 10px;

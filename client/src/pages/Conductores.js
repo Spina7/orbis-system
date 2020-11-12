@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Container_Conductores from '../components/Container_Conductores'
 
 function Conductores() {
     return (
         <div>
-            <h1>Conductores</h1>
+            <Container_Conductores/>
         </div>
     )
 }

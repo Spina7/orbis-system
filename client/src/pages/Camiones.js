@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Container_Camiones from '../components/Container_Camiones'
 
 function Camiones() {
     return (
         <div>
-            <h1>Camiones</h1>
+            <Container_Camiones/>
         </div>
     )
 }
