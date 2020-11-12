@@ -10,7 +10,10 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-
+import * as AiIcons from "react-icons/ai";
+import * as BsIcons from "react-icons/bs";
+import * as FaIcons from "react-icons/fa";
+import * as TiIcons from "react-icons/ti";
 
 export const CartaPorte = ({cartaporte}) => {
     const { 
@@ -29,9 +32,17 @@ export const CartaPorte = ({cartaporte}) => {
               </TableCell>
               <TableCell align="left">{Origen}</TableCell>
               <TableCell align="left">{Destino}</TableCell>
-              <TableCell align="left">{Estado}</TableCell>
+              <TableCell align="left"><p>{Estado}</p></TableCell>
               <TableCell align="left">{FechaExp}</TableCell>
-              <TableCell align="left"><button>editar</button></TableCell>
+              <TableCell align="left">
+                  <div className="Acciones">
+                <a href="#"><BsIcons.BsEyeFill/></a>
+                <a href="#"><AiIcons.AiFillEdit/></a>
+                <a href="#"><AiIcons.AiFillPrinter/></a>
+                <a href="#"><FaIcons.FaMapMarkedAlt/></a>
+                <a href="#"><TiIcons.TiDelete/></a>
+                </div>
+              </TableCell>
               </TableRow>
             </>
     )

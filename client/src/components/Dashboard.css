@@ -182,3 +182,31 @@
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+
+.dashboard__5 a{
+  margin-right: 15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.dashboard__5 a:hover{
+  color: black;
+}
+
+.dashboard__5 p{
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  border: 2px solid #0abb87;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #0abb87;
+  background-color: rgba(10, 187, 135, 0.1);
+}
+
+.dashboard__5 .Acciones{
+  display: flex;
+}
