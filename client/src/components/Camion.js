@@ -36,7 +36,7 @@ export const Camion = ({camion}) => {
               <TableCell align="left">{Marca}</TableCell>
               <TableCell align="left">{Año}</TableCell>
               <TableCell align="left">{Placas}</TableCell>
-              <TableCell align="left">{Km}</TableCell>
+              <TableCell align="left">{Km}Km</TableCell>
               <TableCell align="left"><p>{Estado}</p></TableCell>
               <TableCell align="center">
                 <a href="#"><BsIcons.BsEyeFill/></a>
