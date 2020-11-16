@@ -16,7 +16,7 @@ function Navbar() {
                 <Link to="#" className="menu-bars">
                     <FaIcons.FaBars onClick={showSidebar}/>
                 </Link>
-                <img src="http://orbislogistics.com.mx/wp-content/uploads/2020/10/LOGO3-266x63.png" className="image"/>
+                <Link className ="link" to="/"><img src="http://orbislogistics.com.mx/wp-content/uploads/2020/10/LOGO3-266x63.png"/></Link>
             </div>
                 <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items" onClick={showSidebar}>

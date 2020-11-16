@@ -14,6 +14,7 @@ import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
 import * as TiIcons from "react-icons/ti";
+import { Modal_Cliente } from './Modal_Cliente';
 
 export const Cliente = ({cliente}) => {
     const { 
@@ -24,6 +25,20 @@ export const Cliente = ({cliente}) => {
         Domicilio_C,
         Telefono_C
      } = cliente;
+
+     const [isVisible, setIsVisible] = useState(false);
+
+  const showModal = () => setIsVisible(true);
+  const hideModal = () => setIsVisible(false);
+
+     const deleteCliente = async () => {
+      try {
+        await db.collection('Clientes').doc(id).delete();
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
     return(
         <>
         <TableRow key={Nombre_C}>
@@ -36,10 +51,14 @@ export const Cliente = ({cliente}) => {
               <TableCell align="left">{Telefono_C}</TableCell>
               <TableCell align="center">
                 <a href="#"><BsIcons.BsEyeFill/></a>
-                <a href="#"><AiIcons.AiFillEdit/></a>
-                <a href="#"><TiIcons.TiDelete/></a>
+                <a onClick={showModal}><AiIcons.AiFillEdit/></a>
+                <a onClick={deleteCliente}><TiIcons.TiDelete/></a>
               </TableCell>
               </TableRow>
+              {
+        isVisible &&
+        <Modal_Cliente cliente={cliente} mode='edit' isVisible={isVisible} hideModal={hideModal} />
+      }
             </>
     )
 }

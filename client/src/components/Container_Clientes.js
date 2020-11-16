@@ -11,6 +11,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import './Dashboard.css';
+import { Modal_Cliente } from './Modal_Cliente';
 
 function Container_Clientes() {
     const useStyles = makeStyles({
@@ -22,6 +23,19 @@ function Container_Clientes() {
     const classes = useStyles();
     
     const {docs: clientes} = useData('Clientes');
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const showModal = () => setIsVisible(true);
+  const hideModal = () => setIsVisible(false);
+
+  const newCliente = {
+          Nombre_C: '',
+          Empresa_C: '',
+          RFC_C: '',
+          Domicilio_C: '',
+          Telefono_C: ''
+    }
 
     return (
         <div className='container'>
@@ -35,7 +49,9 @@ function Container_Clientes() {
             <TableCell align="left">RFC</TableCell>
             <TableCell align="left">Domicilio</TableCell>
             <TableCell align="left">Telefono</TableCell>
-            <TableCell align="center">Acciones <button>Agregar</button></TableCell>
+            <TableCell align="center">Acciones 
+            <button className='add-button' onClick={showModal}>Agregar</button>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -48,6 +64,10 @@ function Container_Clientes() {
       </Table>
     </TableContainer>
         </div>
+        {
+        isVisible &&
+        <Modal_Cliente cliente={newCliente} mode='create' isVisible={isVisible} hideModal={hideModal} />
+      }
         </div>
         
     )

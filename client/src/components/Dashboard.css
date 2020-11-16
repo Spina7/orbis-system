@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   background-color: #E1E3E7;
+  padding-top: 30px;
 }
 
 
@@ -191,6 +192,7 @@
 
 .dashboard__5 a:hover{
   color: rgba(0, 17, 255, 0.37);
+  cursor: pointer;
 }
 
 .dashboard__5 p{

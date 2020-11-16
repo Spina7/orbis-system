@@ -22,6 +22,7 @@ class Solicitud_pdf extends Component {
         saveAs(pdfBlob, 'newPdf.pdf');
       })
   }
+  
 
   render() {
     return (
