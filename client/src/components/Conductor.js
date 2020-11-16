@@ -14,6 +14,7 @@ import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
 import * as TiIcons from "react-icons/ti";
+import { Modal_Conductor } from './Modal_Conductor';
 
 export const Conductor = ({conductor}) => {
     const { 
@@ -24,6 +25,20 @@ export const Conductor = ({conductor}) => {
         Estado_P,
         Telefono_P
      } = conductor;
+
+     const [isVisible, setIsVisible] = useState(false);
+
+     const showModal = () => setIsVisible(true);
+     const hideModal = () => setIsVisible(false);
+   
+        const deleteConductor = async () => {
+         try {
+           await db.collection('Operadores').doc(id).delete();
+         } catch (error) {
+           console.error(error);
+         }
+       }
+
     return(
         <>
         <TableRow key={Nombre_P}>
@@ -36,10 +51,14 @@ export const Conductor = ({conductor}) => {
               <TableCell align="left">{Telefono_P}</TableCell>
               <TableCell align="center">
                 <a href="#"><BsIcons.BsEyeFill/></a>
-                <a href="#"><AiIcons.AiFillEdit/></a>
-                <a href="#"><TiIcons.TiDelete/></a>
+                <a onClick={showModal}><AiIcons.AiFillEdit/></a>
+                <a onClick={deleteConductor}><TiIcons.TiDelete/></a>
               </TableCell>
               </TableRow>
+              {
+        isVisible &&
+        <Modal_Conductor conductor={conductor} mode='edit' isVisible={isVisible} hideModal={hideModal} />
+      }
             </>
     )
 }

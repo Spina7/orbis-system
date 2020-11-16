@@ -11,6 +11,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import './Dashboard.css';
+import { Modal_Conductor } from './Modal_Conductor';
 
 function Container_Conductores() {
     const useStyles = makeStyles({
@@ -22,6 +23,19 @@ function Container_Conductores() {
     const classes = useStyles();
     
     const {docs: conductores} = useData('Operadores');
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const showModal = () => setIsVisible(true);
+  const hideModal = () => setIsVisible(false);
+
+  const newConductor = {
+          Nombre_P: '',
+          Unidad_P: '',
+          Placas_P: '',
+          Estado_P: '',
+          Telefono_P: ''
+    }
 
     return (
         <div className='container'>
@@ -35,7 +49,7 @@ function Container_Conductores() {
             <TableCell align="left">Placas</TableCell>
             <TableCell align="left">Estado</TableCell>
             <TableCell align="left">Telefono</TableCell>
-            <TableCell align="center">Acciones <button>Agregar</button></TableCell>
+            <TableCell align="center">Acciones <button className='add-button' onClick={showModal}>Agregar</button></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -48,6 +62,10 @@ function Container_Conductores() {
       </Table>
     </TableContainer>
         </div>
+        {
+        isVisible &&
+        <Modal_Conductor conductor={newConductor} mode='create' isVisible={isVisible} hideModal={hideModal} />
+      }
         </div>
         
     )

@@ -51,14 +51,14 @@ export const Modal_Cliente = ({ cliente, mode, isVisible, hideModal }) => {
     const handleSubmit = (e) => {
       e.preventDefault();
       if (mode === 'edit') {
-        updateQuote();
+        updateCliente();
       } else {
-        createQuote();
+        createCliente();
       }
       closeModal();
     }
   
-    const createQuote = async () => {
+    const createCliente = async () => {
       try {
         await db.collection('Clientes').add({
           Nombre_C: newNombre_C,
@@ -72,7 +72,7 @@ export const Modal_Cliente = ({ cliente, mode, isVisible, hideModal }) => {
       }
     }
   
-    const updateQuote = async () => {
+    const updateCliente = async () => {
       try {
         await db.collection('Clientes').doc(id)
           .update({
